@@ -1,0 +1,11 @@
+{"username": "test123", "password": "test123"}
+
+ab -n 100 -c 10 -p payload.json -T 'application/json' -H 'Accept: application/json' riegel.canyon.b11.com/api/auth/register/
+
+ab -n 100 -c 10 -p payload.json -T 'application/json' -H 'Accept: application/json' riegel.canyon.b11.com/api/auth/login/
+
+ab -n 100 -c 10 -T 'application/json' -H 'Accept: application/json' -H 'Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vcmllZ2VsL2FwaS9hdXRoL2xvZ2luIiwiaWF0IjoxNzAwMDcxMTc1LCJleHAiOjE3MDAwNzQ3NzUsIm5iZiI6MTcwMDA3MTE3NSwianRpIjoiNXhudjF1MzN6NncxRUIyRyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.n8Wef9ma2C1TtzvdeCoHk_0WOlkS0_GVPOXKuwEhfW0' riegel.canyon.b11.com/api/me/
+
+ab -n 100 -c 10 -p payload.json -T 'application/json' -H 'Accept: application/json' 10.14.4.1/api/auth/register/
+
+> /var/log/nginx/access.log

@@ -1,0 +1,5 @@
+curl -X POST http://riegel.canyon.b11.com/api/auth/register -H 'Accept: application/json' -H 'Content-Type: application/json' -d '{"username": "test123", "password": "test123"}' | jq
+
+curl -X POST http://riegel.canyon.b11.com/api/auth/login -H 'Accept: application/json' -H 'Content-Type: application/json' -d '{"username": "test123", "password": "test123"}' | jq
+
+curl -X GET http://riegel.canyon.b11.com/api/me -H 'Accept: application/json' -H 'Content-Type: application/json' -H 'Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vcmllZ2VsL2FwaS9hdXRoL2xvZ2luIiwiaWF0IjoxNzAwMDcxMTc1LCJleHAiOjE3MDAwNzQ3NzUsIm5iZiI6MTcwMDA3MTE3NSwianRpIjoiNXhudjF1MzN6NncxRUIyRyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.n8Wef9ma2C1TtzvdeCoHk_0WOlkS0_GVPOXKuwEhfW0' | jq
